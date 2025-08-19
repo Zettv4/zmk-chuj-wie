@@ -13,7 +13,7 @@
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
-            layers = <0 4 5>;
+            layers = <0 3 4>;
         };
 
         shift_6 {
@@ -44,6 +44,24 @@
             bindings = <&kp PRINTSCREEN>;
             key-positions = <31 13 12>;
         };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <12 13>;
+            layers = <1>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <22 23>;
+            layers = <1>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -70,7 +88,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base {
             display-name = "Base";
             bindings = <
 &kp Q  &kp W           &kp F        &kp P             &kp G      &kp J      &kp L         &kp U        &kp Y                &kp DOT
@@ -80,30 +98,21 @@
             >;
         };
 
-        layer_1 {
+        nav_numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans        &trans     &trans     &kp N9  &kp N8  &kp N7  &trans
+&trans  &trans  &kp LEFT  &kp RIGHT     &trans     &kp N0     &kp N3  &kp N2  &kp N1  &trans
+&trans  &trans  &kp DOWN  &kp UP_ARROW  &trans     &trans     &kp N6  &kp N5  &kp N4  &trans
+                          &trans        &kp SPACE  &kp RCTRL  &trans
             >;
         };
 
-        layer_2 {
+        frow_symbols {
             bindings = <
-&none  &kp F7  &kp F8  &kp F9        &kp F12     &kp EQUAL             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp POUND        &tog 4
+&none  &kp F7  &kp F8  &kp F9        &kp F12     &kp EQUAL             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp POUND        &tog 3
 &none  &kp F1  &kp F2  &kp F3        &kp F11     &kp MINUS             &kp SEMICOLON         &kp SQT                &kp ASTERISK     &kp KP_SLASH
 &none  &kp F4  &kp F5  &kp F6        &kp F10     &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp QUESTION
                        &kp LEFT_ALT  &kp LSHIFT  &trans                &trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans
             >;
         };
 
