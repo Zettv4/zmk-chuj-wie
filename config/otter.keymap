@@ -62,6 +62,12 @@
             key-positions = <10 11>;
             layers = <0>;
         };
+
+        z {
+            bindings = <&kp Z>;
+            key-positions = <20 21>;
+            layers = <4>;
+        };
     };
 
     macros {
@@ -100,37 +106,37 @@
 
         nav_numbers {
             bindings = <
-&trans  &trans  &trans    &trans        &trans     &trans     &kp N9  &kp N8  &kp N7  &trans
-&trans  &trans  &kp LEFT  &kp RIGHT     &trans     &kp N0     &kp N3  &kp N2  &kp N1  &trans
-&trans  &trans  &kp DOWN  &kp UP_ARROW  &trans     &trans     &kp N6  &kp N5  &kp N4  &trans
-                          &trans        &kp SPACE  &kp RCTRL  &trans
+&none  &none     &none     &none         &none      &none      &kp N9  &kp N8  &kp N7  &none
+&none  &kp HOME  &kp LEFT  &kp RIGHT     &kp END    &kp N0     &kp N3  &kp N2  &kp N1  &none
+&none  &none     &kp DOWN  &kp UP_ARROW  &none      &none      &kp N6  &kp N5  &kp N4  &none
+                           &none         &kp SPACE  &kp RCTRL  &none
             >;
         };
 
         frow_symbols {
             bindings = <
-&none  &kp F7  &kp F8  &kp F9        &kp F12     &kp EQUAL             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp POUND        &tog 3
-&none  &kp F1  &kp F2  &kp F3        &kp F11     &kp MINUS             &kp SEMICOLON         &kp SQT                &kp ASTERISK     &kp KP_SLASH
-&none  &kp F4  &kp F5  &kp F6        &kp F10     &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp QUESTION
-                       &kp LEFT_ALT  &kp LSHIFT  &trans                &trans
+&none  &kp F7  &kp F8  &kp F9        &kp F12  &kp EQUAL             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp POUND        &tog 3
+&none  &kp F1  &kp F2  &kp F3        &kp F11  &kp MINUS             &kp SEMICOLON         &kp SQT                &kp ASTERISK     &kp KP_SLASH
+&none  &kp F4  &kp F5  &kp F6        &kp F10  &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp QUESTION
+                       &kp LEFT_ALT  &none    &kp LEFT_SHIFT        &trans
             >;
         };
 
         gaming {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4     &kp NON_US_BACKSLASH  &trans    &trans        &trans     &tog 4
+&kp TAB    &kp Q   &kp W   &kp E     &kp R      &trans                &kp M     &kp UP_ARROW  &trans     &trans
+&kp LSHFT  &kp A   &kp S   &kp D     &kp F      &trans                &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+                           &kp LALT  &kp SPACE  &kp LCTRL             &trans
             >;
         };
 
         league {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans
+&ht TAB ESCAPE  &kp N1  &kp N2  &kp N3     &kp N4     &kp NON_US_BACKSLASH  &none     &none         &none      &tog 0
+&kp Q           &kp W   &kp E   &kp R      &kp T      &none                 &none     &kp UP_ARROW  &none      &none
+&kp A           &kp S   &kp D   &kp F      &kp C      &none                 &kp LEFT  &kp DOWN      &kp RIGHT  &none
+                                &kp RCTRL  &kp SPACE  &none                 &none
             >;
         };
     };
