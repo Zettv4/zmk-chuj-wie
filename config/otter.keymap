@@ -116,18 +116,18 @@
         frow_symbols {
             bindings = <
 &none  &kp F7  &kp F8  &kp F9        &kp F12  &kp EQUAL             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp POUND        &tog 3
-&none  &kp F1  &kp F2  &kp F3        &kp F11  &kp MINUS             &kp SEMICOLON         &kp SQT                &kp ASTERISK     &kp KP_SLASH
-&none  &kp F4  &kp F5  &kp F6        &kp F10  &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp QUESTION
+&none  &kp F1  &kp F2  &kp F3        &kp F10  &kp MINUS             &kp SEMICOLON         &kp SQT                &kp ASTERISK     &kp KP_SLASH
+&none  &kp F4  &kp F5  &kp F6        &kp F11  &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp QUESTION
                        &kp LEFT_ALT  &none    &kp LEFT_SHIFT        &trans
             >;
         };
 
         gaming {
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4     &kp NON_US_BACKSLASH  &trans    &trans        &trans     &tog 4
-&kp TAB    &kp Q   &kp W   &kp E     &kp R      &trans                &kp M     &kp UP_ARROW  &trans     &trans
-&kp LSHFT  &kp A   &kp S   &kp D     &kp F      &trans                &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-                           &kp LALT  &kp SPACE  &kp LCTRL             &trans
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4     &kp NON_US_BACKSLASH  &none     &none         &none      &tog 4
+&kp TAB    &kp Q   &kp W   &kp E     &kp R      &none                 &kp M     &kp UP_ARROW  &none      &none
+&kp LSHFT  &kp A   &kp S   &kp D     &kp F      &none                 &kp LEFT  &kp DOWN      &kp RIGHT  &none
+                           &kp LALT  &kp SPACE  &kp LCTRL             &none
             >;
         };
 
