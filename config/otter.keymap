@@ -99,7 +99,7 @@
             bindings = <
 &kp Q  &kp W           &kp F        &kp P             &kp G      &kp J      &kp L         &kp U        &kp Y                &kp DOT
 &kp A  &ht LEFT_ALT S  &ht LCTRL R  &ht LEFT_SHIFT T  &kp D      &kp H      &ht LSHIFT N  &ht LCTRL E  &ht RIGHT_ALT I      &kp O
-&kp Z  &kp X           &kp C        &kp V             &kp B      &kp M      &kp K         &kp BSPC     &ht LEFT_GUI DELETE  &kp COMMA
+&kp X  &kp Z           &kp C        &kp V             &kp B      &kp M      &kp K         &kp BSPC     &ht LEFT_GUI DELETE  &kp COMMA
                                     &mo 1             &kp SPACE  &kp ENTER  &mo 2
             >;
         };
